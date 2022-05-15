@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: "2048-deployment"
 spec:
+  hostNetwork: true
   selector:
     matchLabels:
       app: "2048"
