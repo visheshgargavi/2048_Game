@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: game2048
   annotations:
-    ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-stagging"
 spec:
   tls:

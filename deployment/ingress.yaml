@@ -4,14 +4,10 @@ metadata:
   name: game2048
   annotations:
     ingress.kubernetes.io/rewrite-target: /
-    cert-manager.io/cluster-issuer: "letsencrypt-stagging"
 spec:
-  tls:
-  - hosts:
-      - host.domain.ext
-    secretName: echo-tls
   rules:
-  - http:
+  - host: host.domain.ext
+    http:
       paths:
       - backend:
           serviceName: "deployment-2048"
