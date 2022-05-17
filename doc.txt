@@ -1,0 +1,17 @@
+minikube addons enable metallb
+minikube addons enable ingress
+
+https://metallb.universe.tf/installation/
+
+C:\Windows\System32\drivers\etc>notepad hosts
+(for creating a local domain)
+
+metallb deployed in metallb-system
+ingress deployed in kube-system
+
+kubectl get pods -n kube-system 
+kubectl get pods -n metallb-system 
+
+kubectl api-resources
+
+2IIE3cI0SDTgLiA6
