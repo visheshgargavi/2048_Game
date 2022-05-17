@@ -33,7 +33,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 ```
 
-## Edit the argocd-server service to expose
+## Edit the argocd-server service to expose the argocd UI
 
 ```hcl
 kubectl edit svc argocd-server -n argocd
