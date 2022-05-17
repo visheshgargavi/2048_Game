@@ -1,7 +1,9 @@
 # 2048_Game
 
-In AWS ;
+In AWS:
+
   • Create K8s cluster using EKS
+  
     o Including all backing Infrastructure (e.g. VPC, RDS)
   • Use GitOps with Flux, Argocd to deploy services
     o Cert-manager
