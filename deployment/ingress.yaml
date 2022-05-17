@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: game2048
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: host.domain.ext
+    http:
+      paths:
+      - backend:
+          serviceName: "deployment-2048"
+          servicePort: 80
