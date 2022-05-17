@@ -53,3 +53,32 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```hcl
 kubectl apply -f aplication.yml
 ```
+
+## installing cert-manager(lets-encrypt) on local minikube
+```hcl
+kubectl create namespace cert-manager
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v0.12.0/cert-manager.yaml
+kubectl get po -n cert-manager
+```
+
+## Basic commands using kubectl
+```hcl
+kubectl get po
+kubectl get svc
+kubectl get deployment
+kubectl get rs
+kubectl get rc
+kubectl delete all --all
+kubectl expose deployment/deployment_name --type=NodePort/ClusterIP/LoadBalancer --port=port_number
+kubectl get all
+kubectl get ing
+kubectl get clusterissuer
+kubectl describe deployment deployment_name
+kubectl get certificate
+```
+
+## How to add addons and enable
+```hcl
+minikube addons enable addon_name
+minikube addons list
+```
