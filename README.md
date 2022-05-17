@@ -75,6 +75,7 @@ kubectl get ing
 kubectl get clusterissuer
 kubectl describe deployment deployment_name
 kubectl get certificate
+kubectl get secret
 ```
 
 ## How to add addons and enable
