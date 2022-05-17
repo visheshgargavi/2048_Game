@@ -14,4 +14,12 @@ kubectl get pods -n metallb-system
 
 kubectl api-resources
 
+minikube addons list
+
+kubectl get ing
+kubectl get cluster-issuer
+C:\Users\user\Downloads\ngrok-v3-stable-windows-amd64>ngrok.exe http 192.168.99.100
 2IIE3cI0SDTgLiA6
+ngrok config add-authtoken 29IdGq9YUbmqe4pGoXuziflvXyi_5WKP85k5mYQqPXmXx6hjp
+
+kubectl get certificate
